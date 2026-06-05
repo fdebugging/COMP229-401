@@ -3,31 +3,26 @@ function Projects() {
     <div className="container">
       <h1>Projects</h1>
 
-      <div className="card">
-        <h3>Car Catalog Website</h3>
-        <p>
-          A responsive web application that allows users to browse and filter cars.
-          Built with a focus on usability, clean UI design, and mobile responsiveness.
-        </p>
-        <p><b>Tech:</b> HTML, CSS, JavaScript</p>
-      </div>
+      <div className="grid">
 
-      <div className="card">
-        <h3>Retail Database System</h3>
-        <p>
-          Designed a relational database system for inventory management using SQL.
-          Implemented CRUD operations for product tracking and data integrity.
-        </p>
-        <p><b>Tech:</b> MySQL, SQL, Database Design</p>
-      </div>
+        <div className="card">
+          <img src="/car.png" className="project-img" />
+          <h3>Car Catalog Website</h3>
+          <p>Responsive website with filtering and interactive UI.</p>
+        </div>
 
-      <div className="card">
-        <h3>JetLag Travel SRS Project</h3>
-        <p>
-          Developed a full Software Requirements Specification (SRS) document in an Agile team.
-          Included UML diagrams, system requirements, and structured planning.
-        </p>
-        <p><b>Focus:</b> Agile Development, Requirements Analysis</p>
+        <div className="card">
+          <img src="/retail.png" className="project-img" />
+          <h3>Retail Database System</h3>
+          <p>SQL-based inventory system with full CRUD operations.</p>
+        </div>
+
+        <div className="card">
+          <img src="/jetlag.png" className="project-img" />
+          <h3>JetLag SRS Project</h3>
+          <p>Agile-based system design with UML diagrams and documentation.</p>
+        </div>
+
       </div>
     </div>
   );
