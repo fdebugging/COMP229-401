@@ -1,26 +1,33 @@
 function Home() {
   return (
-    <div style={{ padding: "40px", maxWidth: "900px", margin: "auto" }}>
+    <div className="container">
       <h1>Hi, I'm Fatima Dabbous</h1>
 
-      <h3>Junior Software Developer</h3>
+      <h3>Software Engineering Student | Future Developer in Healthcare Tech</h3>
 
-      <p>
-        Software Engineering Technology student with hands-on experience in web
-        development, database design, and software requirements analysis.
-        Passionate about building clean, functional, and data-driven applications.
-      </p>
+      <div className="card">
+        <p>
+          I am a Software Engineering Technology student with a unique background
+          in Public Health & Safety. My goal is to combine healthcare knowledge
+          with software development to build systems that improve how people access,
+          understand, and interact with health-related services.
+        </p>
 
-      <p>
-        Skilled in Java, Python, SQL, JavaScript, and modern frameworks like React
-        and Node.js. Strong background in Agile teamwork and problem-solving.
-      </p>
+        <p>
+          Outside of coding, I am a certified personal trainer and fitness enthusiast.
+          Fitness has shaped my discipline, consistency, and mindset — all of which I
+          bring into my work as a developer.
+        </p>
 
-      <div style={{ marginTop: "20px" }}>
-        <a href="/about">
-          <button>Learn More About Me</button>
-        </a>
+        <p>
+          I am especially interested in building systems in healthcare, wellness,
+          and data-driven applications that improve real-world outcomes.
+        </p>
       </div>
+
+      <a href="/about">
+        <button>Learn More About Me</button>
+      </a>
     </div>
   );
 }

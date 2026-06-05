@@ -1,43 +1,33 @@
 function Projects() {
   return (
-    <div style={{ padding: "40px", maxWidth: "900px", margin: "auto" }}>
+    <div className="container">
       <h1>Projects</h1>
 
-      <div>
-        <h3>🚗 Car Catalog Website</h3>
+      <div className="card">
+        <h3>Car Catalog Website</h3>
         <p>
-          Built a responsive web application featuring a car catalog with filtering
-          functionality and interactive UI components.
+          A responsive web application that allows users to browse and filter cars.
+          Built with a focus on usability, clean UI design, and mobile responsiveness.
         </p>
-        <p>
-          Technologies: HTML, CSS, JavaScript
-        </p>
+        <p><b>Tech:</b> HTML, CSS, JavaScript</p>
       </div>
 
-      <hr />
-
-      <div>
-        <h3>🗄️ Retail Database Application</h3>
+      <div className="card">
+        <h3>Retail Database System</h3>
         <p>
-          Designed and developed a MySQL-based inventory management system enabling
-          CRUD operations for product records.
+          Designed a relational database system for inventory management using SQL.
+          Implemented CRUD operations for product tracking and data integrity.
         </p>
-        <p>
-          Technologies: MySQL, SQL, Database Design
-        </p>
+        <p><b>Tech:</b> MySQL, SQL, Database Design</p>
       </div>
 
-      <hr />
-
-      <div>
-        <h3>✈️ JetLag Travel App (SRS Project)</h3>
+      <div className="card">
+        <h3>JetLag Travel SRS Project</h3>
         <p>
-          Created a full Software Requirements Specification (SRS) document in an Agile
-          team environment, including UML diagrams and system planning.
+          Developed a full Software Requirements Specification (SRS) document in an Agile team.
+          Included UML diagrams, system requirements, and structured planning.
         </p>
-        <p>
-          Focus: Requirements Analysis, Agile Development, System Design
-        </p>
+        <p><b>Focus:</b> Agile Development, Requirements Analysis</p>
       </div>
     </div>
   );
