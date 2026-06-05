@@ -5,22 +5,32 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent!");
+    alert("Message sent successfully!");
     navigate("/");
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="container">
+      <h1>Contact Me</h1>
 
-      <form onSubmit={handleSubmit}>
-        <input placeholder="First Name" required />
-        <input placeholder="Last Name" required />
-        <input placeholder="Email" required />
-        <textarea placeholder="Message" required />
+      <div className="card">
+        <p>
+          Let’s connect! Whether it’s collaboration, opportunities, or just
+          a conversation about tech, fitness, or healthcare systems.
+        </p>
+      </div>
 
-        <button type="submit">Send</button>
-      </form>
+      <div className="card">
+        <form onSubmit={handleSubmit} style={{ display: "grid", gap: "10px" }}>
+          <input placeholder="First Name" required />
+          <input placeholder="Last Name" required />
+          <input placeholder="Email" required />
+          <input placeholder="Phone Number" />
+          <textarea placeholder="Your Message" rows="4" required />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   );
 }

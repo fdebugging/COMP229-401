@@ -5,50 +5,36 @@ function About() {
 
       <div className="card">
         <p>
-          I am currently studying Software Engineering Technology at Centennial College,
-          where I focus on full-stack development, database systems, and software design.
+          I am a Software Engineering Technology student at Centennial College
+          with a strong interest in building systems that connect technology
+          with real-world impact.
         </p>
 
         <p>
-          I previously completed a Bachelor of Public Health & Safety, which gives me a strong
-          understanding of healthcare systems, human behavior, and real-world service delivery.
+          My background in Public Health & Safety gives me a unique perspective
+          on user needs, especially in healthcare-related systems, accessibility,
+          and data-driven decision making.
         </p>
 
         <p>
-          My passion lies in building technology that supports health, wellness, and efficiency —
-          especially systems that help people make better decisions and access better services.
+          I enjoy solving problems through structured thinking, clean code, and
+          scalable design — especially in full-stack web applications.
         </p>
       </div>
 
       <div className="card">
         <h3>Education</h3>
-        <ul>
-          <li>Software Engineering Technology — Centennial College</li>
-          <li>Public Health & Safety — Toronto Metropolitan University</li>
-        </ul>
+        <p>🎓 Software Engineering Technology — Centennial College</p>
+        <p>🎓 Public Health & Safety — Toronto Metropolitan University</p>
       </div>
 
       <div className="card">
-        <h3>Interests</h3>
-        <ul>
-          <li>Healthcare technology systems</li>
-          <li>Fitness and performance training</li>
-          <li>Database design and analytics</li>
-          <li>Full-stack web development</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <h3>Resume</h3>
-
-        {/* THIS IS WHERE YOUR PDF GOES */}
-        <a
-          href="/FatimaDabbous(Resume).pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button>Download My Resume</button>
-        </a>
+        <h3>What Drives Me</h3>
+        <p>
+          I’m motivated by building meaningful systems in healthcare, wellness,
+          and everyday digital experiences that improve how people interact with
+          technology.
+        </p>
       </div>
     </div>
   );
