@@ -1,33 +1,33 @@
 function Home() {
   return (
     <div className="container">
-      <h1>Hi, I'm Fatima Dabbous</h1>
 
-      <h3>Software Engineering Student | Future Developer in Healthcare Tech</h3>
+      <img src="/me.jpg" className="hero-img" alt="me" />
+
+      <h1>Fatima Dabbous</h1>
+      <h3>Software Developer | Public Health Background | Fitness Enthusiast</h3>
 
       <div className="card">
         <p>
-          I am a Software Engineering Technology student with a unique background
-          in Public Health & Safety. My goal is to combine healthcare knowledge
-          with software development to build systems that improve how people access,
-          understand, and interact with health-related services.
+          I am a Software Engineering student who blends technology with real-world
+          understanding from my background in Public Health and Safety.
         </p>
 
         <p>
-          Outside of coding, I am a certified personal trainer and fitness enthusiast.
-          Fitness has shaped my discipline, consistency, and mindset — all of which I
-          bring into my work as a developer.
+          I’m passionate about building systems that improve healthcare, wellness,
+          and everyday user experiences through clean and efficient software design.
         </p>
 
         <p>
-          I am especially interested in building systems in healthcare, wellness,
-          and data-driven applications that improve real-world outcomes.
+          Outside of coding, I’m deeply involved in fitness and personal training —
+          which has shaped my discipline, consistency, and mindset as a developer.
         </p>
       </div>
 
       <a href="/about">
-        <button>Learn More About Me</button>
+        <button>Explore My Work</button>
       </a>
+
     </div>
   );
 }
