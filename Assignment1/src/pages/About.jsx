@@ -36,6 +36,18 @@ function About() {
           technology.
         </p>
       </div>
+
+      <div className="card">
+        <h3>Resume</h3>
+        <p>
+          Download my full resume to view my complete experience, technical skills,
+          education, and project history.
+        </p>
+
+        <a href="/FatimaDabbous(Resume).pdf" target="_blank">
+          <button>Download My Resume</button>
+        </a>
+      </div>
     </div>
   );
 }
