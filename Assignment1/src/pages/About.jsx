@@ -38,16 +38,38 @@ function About() {
       </div>
 
       <div className="card">
-        <h3>Resume</h3>
-        <p>
-          Download my full resume to view my complete experience, technical skills,
-          education, and project history.
-        </p>
+  <h3>Resume</h3>
+  <p>
+    Download my full resume to view my complete experience, technical skills,
+    education, and project history.
+  </p>
 
-        <a href="/FatimaDabbous(Resume).pdf" target="_blank">
-          <button>Download My Resume</button>
-        </a>
-      </div>
+  <a href="/FatimaDabbous(Resume).pdf" target="_blank" rel="noreferrer">
+    <button>Download My Resume</button>
+  </a>
+    </div>
+
+    <div className="card">
+    <h3>GitHub Portfolio</h3>
+
+    <p>
+    I actively use GitHub to manage projects, practice version control, and
+    showcase my development work. My repositories include academic projects,
+    web applications, database systems, and software engineering coursework.
+    </p>
+
+    <p>
+    Feel free to explore my code, project history, and ongoing development work.
+    </p>
+
+    <a
+    href="https://github.com/fdebugging"
+    target="_blank"
+    rel="noreferrer"
+    >
+    <button>Visit My GitHub</button>
+    </a>
+    </div>
     </div>
   );
 }
