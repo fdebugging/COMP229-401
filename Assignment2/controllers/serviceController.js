@@ -1,0 +1,102 @@
+const Service = require("../models/Service");
+
+exports.getAll = async (req, res, next) => {
+    try {
+
+        const services = await Service.find();
+
+        const result = services.map(service => ({
+            title: service.title,
+            description: service.description,
+            id: service._id
+        }));
+
+        res.json({
+            success: true,
+            message: "Services list retrieved successfully.",
+            data: result
+        });
+
+    } catch(err) {
+        next(err);
+    }
+};
+
+exports.getById = async (req,res,next)=>{
+
+    try{
+
+        const service = await Service.findById(req.params.id);
+
+        res.json({
+            success:true,
+            message:"Service retrieved successfully.",
+            data:{
+                title:service.title,
+                description:service.description,
+                id:service._id
+            }
+        });
+
+    }catch(err){
+        next(err);
+    }
+};
+
+exports.add = async (req,res,next)=>{
+
+    try{
+
+        const service = await Service.create(req.body);
+
+        res.status(201).json({
+            success:true,
+            message:"Service added successfully.",
+            data:{
+                title:service.title,
+                description:service.description,
+                id:service._id
+            }
+        });
+
+    }catch(err){
+        next(err);
+    }
+};
+
+exports.update = async(req,res,next)=>{
+
+    try{
+
+        await Service.findByIdAndUpdate(
+            req.params.id,
+            req.body
+        );
+
+        res.json({
+            success:true,
+            message:"Service updated successfully."
+        });
+
+    }catch(err){
+        next(err);
+    }
+};
+
+exports.delete = async(req,res,next)=>{
+
+    try{
+
+        await Service.findByIdAndDelete(
+            req.params.id
+        );
+
+        res.json({
+            success:true,
+            message:"Service deleted successfully."
+        });
+
+    }catch(err){
+        next(err);
+    }
+};
