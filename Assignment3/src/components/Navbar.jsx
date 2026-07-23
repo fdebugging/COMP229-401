@@ -1,0 +1,18 @@
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+
+      <h2>Portfolio Manager</h2>
+
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/admin">Admin Dashboard</Link>
+      </div>
+
+    </nav>
+  );
+}
+
+export default Navbar;
