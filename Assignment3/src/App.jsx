@@ -9,6 +9,11 @@ import ProjectList from "./projects/ProjectList";
 import AddProject from "./projects/AddProject";
 import EditProject from "./projects/EditProject";
 
+import ServiceList from "./services/ServiceList";
+import AddService from "./services/AddService";
+import EditService from "./services/EditService";
+
+
 function App() {
   return (
     <Router>
@@ -26,6 +31,12 @@ function App() {
         <Route path="/projects/add" element={<AddProject />} />
 
         <Route path="/projects/edit/:id" element={<EditProject />} />
+
+        <Route path="/services" element={<ServiceList />} />
+
+        <Route path="/services/add" element={<AddService />} />
+        
+        <Route path="/services/edit/:id" element={<EditService />} />
 
       </Routes>
 
