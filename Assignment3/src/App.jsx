@@ -13,6 +13,10 @@ import ServiceList from "./services/ServiceList";
 import AddService from "./services/AddService";
 import EditService from "./services/EditService";
 
+import ReferenceList from "./references/ReferenceList";
+import AddReference from "./references/AddReference";
+import EditReference from "./references/EditReference";
+
 
 function App() {
   return (
@@ -35,8 +39,14 @@ function App() {
         <Route path="/services" element={<ServiceList />} />
 
         <Route path="/services/add" element={<AddService />} />
-        
+
         <Route path="/services/edit/:id" element={<EditService />} />
+
+        <Route path="/references" element={<ReferenceList />} />
+
+        <Route path="/references/add" element={<AddReference />} />
+
+        <Route path="/references/edit/:id" element={<EditReference />} />
 
       </Routes>
 
