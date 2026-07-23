@@ -31,11 +31,13 @@ function ProjectList() {
 
   return (
     <div className="container">
-      <h1>Projects</h1>
+      <div className="page-header">
+        <h1>Projects</h1>
 
-      <Link className="card" to="/projects/add">
-        Add Project
-      </Link>
+        <Link className="add-btn" to="/projects/add">
+             Add Project
+        </Link>
+    </div>
 
       <table>
         <thead>
@@ -58,7 +60,15 @@ function ProjectList() {
                   : ""}
               </td>
               <td>{project.description}</td>
-              <td>{project.image}</td>
+              <td>
+                {project.image && (
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="project-image"
+                    />
+                )}
+              </td>
               <td>
                 <Link to={`/projects/edit/${project.id}`}>Edit</Link>
                 {" | "}
