@@ -13,11 +13,7 @@ function EditProject() {
     image: "",
   });
 
-  useEffect(() => {
-    loadProject();
-  }, []);
-
-  async function loadProject() {
+  const loadProject = async () => {
     try {
       const response = await api.get(`/projects/${id}`);
 
@@ -32,7 +28,11 @@ function EditProject() {
     } catch (error) {
       console.error(error);
     }
-  }
+  };
+
+  useEffect(() => {
+    loadProject();
+  }, []);
 
   const handleChange = (e) => {
     setProject({

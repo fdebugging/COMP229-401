@@ -17,6 +17,10 @@ import ReferenceList from "./references/ReferenceList";
 import AddReference from "./references/AddReference";
 import EditReference from "./references/EditReference";
 
+import UserList from "./users/UserList";
+import AddUser from "./users/AddUser";
+import EditUser from "./users/EditUser";
+
 
 function App() {
   return (
@@ -47,6 +51,12 @@ function App() {
         <Route path="/references/add" element={<AddReference />} />
 
         <Route path="/references/edit/:id" element={<EditReference />} />
+
+        <Route path="/users" element={<UserList />} />
+
+        <Route path="/users/add" element={<AddUser />} />
+
+        <Route path="/users/edit/:id" element={<EditUser />} />
 
       </Routes>
 
